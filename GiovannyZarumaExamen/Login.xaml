@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GiovannyZarumaExamen.Login">
+    <Grid>
+        <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+        </StackLayout>
+        <StackLayout Padding="0" Margin="10,100,10,0" HorizontalOptions="FillAndExpand">
+            <Frame  BackgroundColor="White" HeightRequest="300" HasShadow="True" Padding="0" Margin="0">
+                <StackLayout>
+                    <StackLayout Margin="5">
+                        <Label Text="Inicio de Sesión" TextColor="DimGray" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="17"/>
+                    </StackLayout>
+                    <StackLayout Padding="0" Margin="15,10" >
+                        <Frame BackgroundColor="Transparent"  Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry x:Name="txtUser" Placeholder="Ingrese usuario" FontSize="13" TextColor="DimGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" />
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="Transparent"  Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry x:Name="txtPass" Placeholder="Ingrese la clave" IsPassword="True" FontSize="13" TextColor="DimGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                            </StackLayout>
+                        </Frame>
+
+
+                        <Button Text="Ingreso" x:Name="btnAbrir" Clicked="btnAbrir_Clicked" BorderRadius="20" BackgroundColor="Green" TextColor="White" CornerRadius="30" />
+                        <Label Text="" x:Name="lblResultado" TextColor="DarkRed" />
+
+
+
+                    </StackLayout>
+
+
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+    </Grid>
+</ContentPage>

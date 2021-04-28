@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GiovannyZarumaExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="blue" CornerRadius="0">
+                <Label Text="Registro de Estudiantes"  HorizontalOptions="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+                      
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario:" x:Name="lblUser" ></Label>
+                <Label Text="Nombre del Estudiante: "   HorizontalOptions="Center"   VerticalOptions="Center" />
+                <BoxView Grid.Column="1" />
+                <Entry Grid.Column="1" x:Name="txtNombre" Placeholder="                     " FontSize="13"  HorizontalOptions="Center"  VerticalOptions="Center"/>
+
+                <Label Grid.Row="1" Text="Monto Inicial: "   HorizontalOptions="Center"   VerticalOptions="Center" />
+                <BoxView Grid.Row="1"
+                 Grid.Column="1" />
+                <Entry Grid.Row="1"   Grid.Column="1" x:Name="txtMontoInicial" Placeholder="                  " FontSize="13"  HorizontalOptions="Center"  VerticalOptions="Center" Keyboard="Numeric"/>
+
+                <Label Grid.Row="2" Text="Pago Mensual: "   HorizontalOptions="Center"   VerticalOptions="Center" />
+                <BoxView Grid.Row="2"
+                 Grid.Column="1" />
+                <Entry Grid.Row="2"   Grid.Column="1" x:Name="txtPagoMensual" Placeholder="                  " FontSize="13"  HorizontalOptions="Center"  VerticalOptions="Center" IsEnabled="False"/>
+
+                <BoxView Grid.Row="2"
+                 Grid.Column="2" />
+                <Button  Grid.Row="3"   x:Name="btnTotal" Text="Calcular" Clicked="btnTotal_Clicked"  BackgroundColor="Green" TextColor="White" CornerRadius="30" BorderRadius="20"/>
+                <Button  Grid.Row="3"   Grid.Column="1"  x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"  BackgroundColor="Green" TextColor="White" CornerRadius="30" BorderRadius="20"/>
+
+            </Grid>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

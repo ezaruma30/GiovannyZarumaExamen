@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GiovannyZarumaExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="blue" CornerRadius="0">
+                <Label Text="Resumen de Estudiantes"  HorizontalOptions="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+            <Label Text="Usuario:" x:Name="lblUser" ></Label>
+            <Label Text="Usuario:" x:Name="lblNombre"  FontSize="25"></Label>
+            <Label Text="Primer Abono:" x:Name="lblAbono"  FontSize="25"></Label>
+            <Label Text="Valor Mensual:" x:Name="lblMensual"  FontSize="25"></Label>
+            <Label Text="Valor Final:" x:Name="lblFinal"  FontSize="25"></Label>
+            <Button  x:Name="btnSalir" Text="Salir" Clicked="btnSalir_Clicked"  BackgroundColor="Green" TextColor="White" CornerRadius="30" BorderRadius="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
